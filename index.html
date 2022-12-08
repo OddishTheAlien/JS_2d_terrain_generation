@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Terrain generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="textures/icon.png">
+</head>
+<body>   
+   <div id="nav_bar">
+     <h2>Js 2d terrain</h2>
+   </div>
+   <canvas id="draw_area" height="800px" width="1200px"></canvas>
+   <img id="stone" src="textures/stone_texture.png">
+   <img id="dirt" src="textures/dirt.png">
+   <img id="grass" src="textures/grass.png">
+   <img id="coal" src="textures/coal.png">
+   <img id="iron" src="textures/iron.png">
+   <img id="gold" src="textures/gold.png">
+   <img id="grass2" src="textures/grass2.png">
+   <img id="flower1" src="textures/flower1.png">
+   <img id="flower2" src="textures/flower2.png">
+   <img id="flower3" src="textures/flower3.png">
+   <img id="sand" src="textures/sand.png">
+   <img id="sandstone" src="textures/sandstone.png">
+   <img id="cactus" src="textures/cactus.png">
+   <img id="leaves" src="textures/leaves.png">
+   <img id="wood" src="textures/wood.png">
+   <img id="dead_bush" src="textures/dead_bush.png">
+   <div id="settings">
+   <form onsubmit="generateTerrain()">
+     <p>Terrain Settings</p>
+	 <p>Minimum height chance</p>
+	 <input type="number" max ="12" min="-12" id="min_height" value="2">
+	 <p>Maximum height chance</p>
+	 <input type="number" max ="12" min="0" id="max_height" value="3">
+	 <p>Biome type</p>
+	 <select id="biomes">
+	   <option value="Forest_Biome">Forest</option>
+	   <option value="Flower_Biome">Flower</option>
+	   <option value="Desert_Biome">Desert</option>
+	 </select>
+	 <br>
+	 <input type="submit" value="Regenerate" id="gen_terrain">
+	 <p>Download as png</p>
+	 
+   </form>
+   <div id="download_button" href="https://www.google.com">
+     <p>Download</p>
+   </div>
+   </div>
+</body>
+<script src="main.js"></script>
+</html>
